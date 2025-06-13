@@ -1,0 +1,68 @@
+.buttonContainer {
+  position: relative;
+  width: 113px;
+  height: 113px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pulseRing {
+  position: absolute;
+  width: 113px;
+  height: 113px;
+  border-radius: 50%;
+  border: 1px solid rgba(1, 102, 94, 1);
+  animation: pulse 2s infinite;
+  margin-top: 40px;
+}
+
+.pulseRing:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.pulseRing:nth-child(2) {
+  animation-delay: 0.66s;
+}
+
+.pulseRing:nth-child(3) {
+  animation-delay: 1.33s;
+}
+
+.roundButton {
+  position: relative;
+  width: 113px;
+  height: 113px;
+  border-radius: 50%;
+  background-color: rgba(1, 102, 94, 1);
+  border: none;
+  color: white;
+  font-weight: 400;
+  font-size: 13.89px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-transform: uppercase;
+  cursor: pointer;
+  z-index: 10;
+  transition: transform 0.2s;
+  margin-top: 40px;
+}
+
+.roundButton:hover {
+  transform: scale(1.05);
+}
+
+.roundButton:active {
+  transform: scale(0.98);
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.35);
+    opacity: 0;
+  }
+}

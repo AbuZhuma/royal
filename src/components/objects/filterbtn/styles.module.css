@@ -1,0 +1,42 @@
+.filterbtn {
+  padding: 8px 15px;
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid rgba(230, 230, 230, 1);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.filterbtn:hover {
+  background: rgba(230, 230, 230, 0.3);
+}
+
+.icon {
+  width: 12px;
+  height: 12px;
+  transition: transform 0.3s ease;
+}
+
+.filterbtn:hover .icon {
+  transform: rotate(180deg);
+}
+
+@media (min-width: 768px) {
+  .filterbtn {
+    padding: 10px 20px;
+    font-size: 16px;
+    gap: 15px;
+  }
+  
+  .icon {
+    width: 14px;
+    height: 14px;
+  }
+}

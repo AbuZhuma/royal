@@ -1,0 +1,42 @@
+.bot {
+      width: 100%;
+      display: flex;
+      z-index: 2;
+      justify-content: space-between;
+      align-items: center;
+}
+
+.count {
+      font-weight: 200;
+      font-size: 18px;
+      line-height: 100%;
+      letter-spacing: 0%;
+}
+
+.count span {
+      font-weight: 200;
+      font-size: 37px;
+      line-height: 100%;
+      letter-spacing: 0%;
+}
+.control{
+      display: flex;
+      gap: 6px;
+}
+.controller{
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: rgba(217, 217, 217, 1);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}
+.reverse{
+      transform: rotate(180deg);
+}
+@media (max-width: 768px) {
+      .bot{
+            opacity: 0;
+      }
+}

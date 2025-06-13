@@ -1,0 +1,178 @@
+:root {
+  --max-width: 1200px; 
+}
+
+.top_head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  width: 100%;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 20px;
+  position: relative;
+}
+
+.setting {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 376px;
+  height: 40px;
+}
+
+.theme_changer {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  background: rgba(0, 83, 76, 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.theme_changer:hover {
+  background: rgba(0, 83, 76, 0.8);
+}
+
+.basic_p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0;
+  margin: 0;
+}
+
+.lang_changer {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.opener {
+  width: 9px;
+  height: 9px;
+  border-left: 2px solid white;
+  border-bottom: 2px solid white;
+  transform: rotate(-45deg);
+  margin-left: 10px;
+  transition: transform 0.3s ease;
+}
+
+.lang_changer:hover .opener {
+  transform: rotate(-225deg);
+}
+
+.logo {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+}
+
+.inner_logo {
+  width: 33px;
+  height: 33px;
+  transform: translateY(-12px);
+}
+
+.burger {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 31px;
+}
+
+.burger_p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0;
+  margin: 0;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.burger_p:hover {
+  color: rgba(0, 83, 76, 1);
+}
+
+.burger_img {
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.burger_img:hover {
+  opacity: 0.8;
+}
+
+@media (max-width: 992px) {
+  .setting {
+    width: 300px;
+  }
+  
+  .burger {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .top_head {
+    height: 80px;
+    padding: 0 15px;
+  }
+  
+  .setting {
+    width: auto;
+    gap: 15px;
+  }
+  
+  .basic_p {
+    display: none;
+  }
+  
+  .burger_p {
+    display: none;
+  }
+  .lang_changer{
+      display: none;
+  }
+  
+  .burger {
+    gap: 15px;
+  }
+  
+  .inner_logo {
+    width: 28px;
+    height: 28px;
+  }
+}
+
+@media (max-width: 480px) {
+  .top_head {
+    height: 60px;
+  }
+  
+  .theme_changer {
+    width: 30px;
+    height: 30px;
+  }
+  
+  .burger_img {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .inner_logo {
+    width: 24px;
+    height: 24px;
+    transform: translateY(-8px);
+  }
+}
