@@ -19,14 +19,14 @@ const Objects = () => {
                   </div>
                   <div className={styles.content}>
                         <div className={styles.top_filter}>
-                              {topFilter.map((el) => (<Filterbtn text={el} />))}
+                              {topFilter.map((el, i) => (<Filterbtn key={i} text={el} />))}
                         </div>
                         <div className={styles.top_filter}>
                               <Filterbtn text="Выберите локацию" icon="/dropdwn.svg" />
-                              {botFilter.map((el) => (<Filterbtn text={el} />))}
+                              {botFilter.map((el, i) => (<Filterbtn key={i} text={el} />))}
                         </div>
                         <div className={styles.objects_list}>
-                              {objectsList.map((el) => (<OneObject {...el}/>))}
+                              {objectsList.map((el, i) => (<OneObject key={i} {...el}/>))}
                         </div>
                   </div>
             </div>
